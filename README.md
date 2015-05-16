@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/myovchev/lita-googl.png?branch=master)](https://travis-ci.org/myovchev/lita-googl)
 [![Coverage Status](https://coveralls.io/repos/myovchev/lita-googl/badge.svg?branch=master)](https://coveralls.io/r/myovchev/lita-googl?branch=master)
+[![Code Climate](https://codeclimate.com/github/myovchev/lita-googl/badges/gpa.svg)](https://codeclimate.com/github/myovchev/lita-googl)
+[![Gem Version](https://badge.fury.io/rb/lita-googl.svg)](http://badge.fury.io/rb/lita-googl)
 
 **lita-googl** is a handler for [Lita][lita] that shortens URLs
 via [URL Shortener API][googl-dev]
