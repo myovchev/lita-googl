@@ -9,7 +9,7 @@ module Lita
 
     class Googl < Handler
       config :api_key, type: String, required: true
-      config :ip, type: String, required: false, default: nil
+      config :ip, required: false, default: nil
 
       route %r{^googl\s+(:?expand)?\s*(.\S+)$}i, :googl, command: true, help: {
         'googl' => 'Shorten original or expand shortened URL.'
