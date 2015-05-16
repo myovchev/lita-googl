@@ -10,16 +10,13 @@ describe Lita::Handlers::Googl, lita_handler: true do
   end
 
   let(:shorten) { instance_double("::Googl::Shorten") }
-  let(:expand) { instance_double("::Googl::Expand") }
 
   before do
     registry.config.handlers.googl do |config|
       config.api_key = "APIKEY"
-      config.ip = "0.0.0.0"
     end
 
     allow(::Googl::Shorten).to receive(:new).and_return(shorten)
-    allow(::Googl::Expand).to receive(:new).and_return(expand)
   end
 
   it "should send shorten request" do
@@ -32,12 +29,12 @@ describe Lita::Handlers::Googl, lita_handler: true do
 
     allow(::Googl).to receive(:shorten).with(
       long_url,
+      nil,
       registry.config.handlers.googl.api_key,
-      registry.config.handlers.googl.ip,
     ).and_return(shorten)
 
     user1 = Lita::User.create(123, name: "user1", mention_name: 'user1')
     send_command("googl #{long_url}", as: user1)
-    expect(replies.last).to eq("#{user1.name} #{short_url}")
+    expect(replies.last).to eq("#{user1.name}: #{short_url}")
   end
 end
