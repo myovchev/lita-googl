@@ -1,7 +1,7 @@
 # lita-googl
 
 [![Build Status](https://travis-ci.org/myovchev/lita-googl.png?branch=master)](https://travis-ci.org/myovchev/lita-googl)
-[![Coverage Status](https://coveralls.io/repos/myovchev/lita-googl/badge.png)](https://coveralls.io/r/myovchev/lita-googl)
+[![Coverage Status](https://coveralls.io/repos/myovchev/lita-googl/badge.svg?branch=master)](https://coveralls.io/r/myovchev/lita-googl?branch=master)
 
 TODO: Add a description of the plugin.
 
