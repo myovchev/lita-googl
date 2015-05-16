@@ -3,8 +3,8 @@ Gem::Specification.new do |spec|
   spec.version       = "0.0.1"
   spec.authors       = ["Miroslav Yovchev"]
   spec.email         = ["m.yovchev@corllete.com"]
-  spec.description   = %q(Lita handler - shorten URL via goo.gl)
-  spec.summary       = %q(Lita handler - shorten URL via goo.gl)
+  spec.description   = %q(Lita handler - shorten URL via Google URL Shortener API)
+  spec.summary       = %q(Lita handler - shorten URL via Google URL Shortener API)
   spec.homepage      = "https://github.com/myovchev/lita-googl"
   spec.license       = "MIT"
   spec.metadata      = { "lita_plugin_type" => "handler" }
