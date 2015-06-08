@@ -41,7 +41,7 @@ XXXXXXXX
 ## Usage
 
 ```
-22:55 <SecretR> ZaraRobo google http://zaralab.org/
+22:55 <SecretR> ZaraRobo googl http://zaralab.org/
 22:55 <ZaraRobo> SecretR http://goo.gl/x5PsTf
 ```
 
